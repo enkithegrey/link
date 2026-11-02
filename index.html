@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enki Si Abu | Official Links</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    /* Background grid accent */
+    .bg-grid {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+
+    /* Glow effect for avatar */
+    .avatar-glow {
+      box-shadow: 0 0 25px -5px rgba(239, 68, 68, 0.35), 0 0 15px -3px rgba(168, 85, 247, 0.25);
+    }
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-100 min-h-screen flex flex-col justify-between items-center p-4 relative overflow-x-hidden selection:bg-rose-500 selection:text-white">
+
+  <!-- Ambient Background Accents -->
+  <div class="fixed inset-0 bg-grid pointer-events-none -z-10"></div>
+  <div class="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[500px] h-[350px] bg-gradient-to-tr from-rose-900/20 via-purple-900/20 to-transparent blur-[120px] pointer-events-none -z-10 rounded-full"></div>
+  <div class="fixed bottom-[-10%] left-1/2 -translate-x-1/2 w-[400px] h-[300px] bg-gradient-to-t from-red-950/20 to-transparent blur-[100px] pointer-events-none -z-10 rounded-full"></div>
+
+  <!-- Share / Action Bar -->
+  <div class="w-full max-w-md flex justify-end pt-2 pb-4">
+    <button id="shareBtn" class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-800 hover:border-neutral-700 text-xs text-neutral-300 font-medium transition duration-200 backdrop-blur-md">
+      <i class="fa-solid fa-arrow-up-from-bracket text-xs"></i>
+      <span>Bagikan Profil</span>
+    </button>
+  </div>
+
+  <!-- Main Container -->
+  <main class="w-full max-w-md flex-1 flex flex-col items-center">
+    
+    <!-- Profile Section -->
+    <header class="flex flex-col items-center text-center mb-8">
+      <!-- Avatar with glowing ring -->
+      <div class="relative group mb-4">
+        <div class="w-24 h-24 rounded-full p-[2px] bg-gradient-to-tr from-red-500 via-rose-500 to-purple-600 avatar-glow transition-transform duration-300 group-hover:scale-105">
+          <div class="w-full h-full rounded-full bg-neutral-900 flex items-center justify-center overflow-hidden border-2 border-neutral-950">
+            <!-- Icon/Initial Placeholder Avatar -->
+            <div class="w-full h-full bg-gradient-to-br from-neutral-800 to-neutral-900 flex items-center justify-center">
+              <span class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-rose-200 tracking-wider">
+                ABU
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Verified Badge -->
+        <span class="absolute bottom-1 right-1 bg-red-600 text-white text-[11px] w-6 h-6 rounded-full flex items-center justify-center border-2 border-neutral-950 shadow-md">
+          <i class="fa-solid fa-check"></i>
+        </span>
+      </div>
+
+      <!-- Identity -->
+      <h1 class="text-2xl font-bold tracking-tight text-white flex items-center justify-center gap-1.5">
+        Enki Si Abu
+      </h1>
+      <p class="text-xs uppercase tracking-widest font-semibold text-rose-400/90 mt-1">
+        Content Creator & Storyteller
+      </p>
+      <p class="text-sm text-neutral-400 mt-2 max-w-xs leading-relaxed">
+        Anime &amp; Pop Culture Storytelling • Ulasan, Teori, dan Cerita Menarik.
+      </p>
+    </header>
+
+    <!-- Social Links Stack -->
+    <section class="w-full flex flex-col gap-3.5 mb-8">
+
+      <!-- 1. YouTube -->
+      <a href="https://www.youtube.com/@enkisiabu" target="_blank" rel="noopener noreferrer"
+         class="group relative flex items-center justify-between p-4 rounded-2xl bg-neutral-900/70 hover:bg-neutral-800/80 border border-neutral-800/80 hover:border-red-500/50 backdrop-blur-md shadow-lg shadow-black/20 hover:shadow-red-500/10 transition-all duration-300 transform hover:-translate-y-1">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-red-950/50 border border-red-800/40 flex items-center justify-center text-red-500 group-hover:bg-red-600 group-hover:text-white transition duration-300 text-xl">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="text-left">
+            <h2 class="text-sm font-semibold text-neutral-100 group-hover:text-white transition">
+              Enki Si Abu
+            </h2>
+            <p class="text-xs text-neutral-400 line-clamp-1">
+              Video Essay &amp; Ulasan Mendalam
+            </p>
+          </div>
+        </div>
+        <div class="text-neutral-500 group-hover:text-red-400 group-hover:translate-x-1 transition-all duration-300 pl-2">
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </div>
+      </a>
+
+      <!-- 2. TikTok -->
+      <a href="https://www.tiktok.com/@mas.abu.bercerita" target="_blank" rel="noopener noreferrer"
+         class="group relative flex items-center justify-between p-4 rounded-2xl bg-neutral-900/70 hover:bg-neutral-800/80 border border-neutral-800/80 hover:border-cyan-400/50 backdrop-blur-md shadow-lg shadow-black/20 hover:shadow-cyan-500/10 transition-all duration-300 transform hover:-translate-y-1">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-neutral-800 border border-neutral-700 flex items-center justify-center text-neutral-200 group-hover:bg-neutral-950 group-hover:text-white group-hover:border-cyan-400/60 transition duration-300 text-xl">
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+          <div class="text-left">
+            <h2 class="text-sm font-semibold text-neutral-100 group-hover:text-white transition">
+              Mas Abu Bercerita
+            </h2>
+            <p class="text-xs text-neutral-400 line-clamp-1">
+              Cerita Singkat &amp; Cuplikan Menarik
+            </p>
+          </div>
+        </div>
+        <div class="text-neutral-500 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all duration-300 pl-2">
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </div>
+      </a>
+
+      <!-- 3. Instagram -->
+      <a href="https://www.instagram.com/enkisiabu/" target="_blank" rel="noopener noreferrer"
+         class="group relative flex items-center justify-between p-4 rounded-2xl bg-neutral-900/70 hover:bg-neutral-800/80 border border-neutral-800/80 hover:border-pink-500/50 backdrop-blur-md shadow-lg shadow-black/20 hover:shadow-pink-500/10 transition-all duration-300 transform hover:-translate-y-1">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-pink-950/40 border border-pink-800/40 flex items-center justify-center text-pink-400 group-hover:bg-gradient-to-tr group-hover:from-amber-500 group-hover:via-pink-500 group-hover:to-purple-600 group-hover:text-white transition duration-300 text-xl">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="text-left">
+            <h2 class="text-sm font-semibold text-neutral-100 group-hover:text-white transition">
+              Enki Si Abu
+            </h2>
+            <p class="text-xs text-neutral-400 line-clamp-1">
+              Update Harian &amp; Visual Post
+            </p>
+          </div>
+        </div>
+        <div class="text-neutral-500 group-hover:text-pink-400 group-hover:translate-x-1 transition-all duration-300 pl-2">
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </div>
+      </a>
+
+    </section>
+
+    <!-- Mini Social Bar Icon -->
+    <div class="flex items-center justify-center gap-4 py-2 text-neutral-400">
+      <a href="https://www.youtube.com/@enkisiabu" target="_blank" class="w-10 h-10 rounded-full flex items-center justify-center hover:text-red-500 hover:bg-neutral-900 border border-transparent hover:border-neutral-800 transition">
+        <i class="fa-brands fa-youtube text-lg"></i>
+      </a>
+      <a href="https://www.tiktok.com/@mas.abu.bercerita" target="_blank" class="w-10 h-10 rounded-full flex items-center justify-center hover:text-white hover:bg-neutral-900 border border-transparent hover:border-neutral-800 transition">
+        <i class="fa-brands fa-tiktok text-base"></i>
+      </a>
+      <a href="https://www.instagram.com/enkisiabu/" target="_blank" class="w-10 h-10 rounded-full flex items-center justify-center hover:text-pink-400 hover:bg-neutral-900 border border-transparent hover:border-neutral-800 transition">
+        <i class="fa-brands fa-instagram text-lg"></i>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full text-center py-6 text-xs text-neutral-500">
+    <p>&copy; <span id="currentYear"></span> Enki Si Abu. All rights reserved.</p>
+  </footer>
+
+  <!-- Notification Toast for Copy -->
+  <div id="toast" class="fixed bottom-6 bg-neutral-900/90 text-neutral-100 border border-neutral-700 backdrop-blur-md px-4 py-2.5 rounded-full text-xs font-medium shadow-xl opacity-0 translate-y-3 pointer-events-none transition-all duration-300 flex items-center gap-2">
+    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+    <span>Tautan berhasil disalin!</span>
+  </div>
+
+  <script>
+    // Update year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Share / Copy Link handler
+    const shareBtn = document.getElementById('shareBtn');
+    const toast = document.getElementById('toast');
+
+    shareBtn.addEventListener('click', async () => {
+      const shareData = {
+        title: 'Enki Si Abu - Official Links',
+        text: 'Kunjungi link resmi YouTube, TikTok, dan Instagram Enki Si Abu!',
+        url: window.location.href
+      };
+
+      if (navigator.share && window.isSecureContext) {
+        try {
+          await navigator.share(shareData);
+          return;
+        } catch (err) {
+          // Fallback to clipboard if user cancels or share fails
+        }
+      }
+
+      // Clipboard fallback
+      const dummyInput = document.createElement('input');
+      dummyInput.value = window.location.href;
+      document.body.appendChild(dummyInput);
+      dummyInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(dummyInput);
+
+      // Show toast
+      toast.classList.remove('opacity-0', 'translate-y-3', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 2500);
+    });
+  </script>
+</body>
+</html>
